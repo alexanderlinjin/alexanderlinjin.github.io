@@ -12,7 +12,7 @@
     
     <title>
         
-            文章 | 
+            使用hexo做好博客后上传到github | 
         
         Alin J&#39;s Blog
     </title>
@@ -67,15 +67,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="文章 | Alin J&#39;s Blog">
+    <meta property="og:title" content="使用hexo做好博客后上传到github | Alin J&#39;s Blog">
     <meta property="og:image" content="/img/flower.jpeg" />
     <meta property="og:description" content="">
     
 
     
+        <meta property="article:published_time" content="6月 06, 2016" />
+        <meta property="article:modified_time" content="6月 12, 2017" />
+    
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="文章 | Alin J&#39;s Blog">
+    <meta name="twitter:title" content="使用hexo做好博客后上传到github | Alin J&#39;s Blog">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="/img/flower.jpeg">
     <meta name="twitter:card" content="summary_large_image" />
@@ -83,13 +86,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/archives/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2016/06/06/hexo上传到github/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Alin J&#39;s Blog",
+        "logo": "/img/flower.jpeg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Alin J",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/flower.jpeg"
+        },
+        "description": "你好，这里是Alin J的博客"
+    },
+    "headline": "使用hexo做好博客后上传到github",
+    "url": "http://yoursite.com/2016/06/06/hexo上传到github/index.html",
+    "datePublished": "6月 06, 2016",
+    "dateModified": "6月 12, 2017",
+    "description": "",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://yoursite.com"
+    }
+}
+</script>
 
 
     
@@ -277,155 +310,264 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#以下步骤缺一不可"><span class="post-toc-number">1.</span> <span class="post-toc-text">以下步骤缺一不可</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第一步：创建github账号和创建仓库"><span class="post-toc-number">2.</span> <span class="post-toc-text">第一步：创建github账号和创建仓库</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1，百度github，进入官网注册"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">1，百度github，进入官网注册</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-2，创建仓库"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">1.2，创建仓库</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第二步：生成ssh-key-为github配置ssh-key"><span class="post-toc-number">3.</span> <span class="post-toc-text">第二步：生成ssh key,为github配置ssh key</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-1，生成key"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">2.1，生成key</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-2，为github配置SSH-key"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">2.2，为github配置SSH key</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第三步，配置-congig-yml"><span class="post-toc-number">4.</span> <span class="post-toc-text">第三步，配置_congig.yml</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第四步，建立本地仓库"><span class="post-toc-number">5.</span> <span class="post-toc-text">第四步，建立本地仓库</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#过程中可能出现的报错"><span class="post-toc-number">6.</span> <span class="post-toc-text">过程中可能出现的报错</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#问题1：输入hexo-d之后可能会出现这种问题，不知道你们会不会，反正我就是"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">问题1：输入hexo d之后可能会出现这种问题，不知道你们会不会，反正我就是</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#问题2，ssh-key-没有配好"><span class="post-toc-number">6.2.</span> <span class="post-toc-text">问题2，ssh key 没有配好</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#问题3，git-fatal-远程-origin-已经存在。"><span class="post-toc-number">6.3.</span> <span class="post-toc-text">问题3，git fatal: 远程 origin 已经存在。</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#问题4，ERROR-Deployer-not-found-git"><span class="post-toc-number">6.4.</span> <span class="post-toc-text">问题4，ERROR Deployer not found: git</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#问题5，执行hexo-d之后要输入Username-for-‘https-github-com‘"><span class="post-toc-number">6.5.</span> <span class="post-toc-text">问题5，执行hexo d之后要输入Username for ‘https://github.com‘:</span></a></li></ol></li></ol>
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--3dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2016/06/06/hexo上传到github/">使用hexo做好博客后上传到github</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            操作系统：ubuntu16.04，hexo版本 “hexo”: {“version”: “3.3.7”},操作时间：2017.6.12。本文...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2016/06/06/hexo上传到github/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/touxiang.jpeg" width="44px" height="44px" alt="Alin J's avatar">
-            </div>
-            <div>
-                <strong>Alin J</strong>
-                <span>6月 06, 2016</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--3dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2016/06/05/hexo-install&amp;use/">hexo的安装和使用</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            操作系统：ubuntu16.04,操作时间2017.6.11。hexo是一款基于Node.js的静态博客框架，下面就详细讲解在ubuntu16.04...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2016/06/05/hexo-install&amp;use/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/touxiang.jpeg" width="44px" height="44px" alt="Alin J's avatar">
-            </div>
-            <div>
-                <strong>Alin J</strong>
-                <span>6月 05, 2016</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                使用hexo做好博客后上传到github
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/touxiang.jpeg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Alin J</strong>
+        <span>6月 06, 2016</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=使用hexo做好博客后上传到github&url=http://yoursite.com/2016/06/06/hexo上传到github/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=使用hexo做好博客后上传到github&url=http://yoursite.com/2016/06/06/hexo上传到github/index.html&via=Alin J" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2016/06/06/hexo上传到github/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Alin J&#39;s Blog&title=使用hexo做好博客后上传到github&summary=null&pics=http://yoursite.com/img/flower.jpeg&url=http://yoursite.com/2016/06/06/hexo上传到github/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>操作系统：ubuntu16.04，hexo版本 “hexo”: {“version”: “3.3.7”},操作时间：2017.6.12。<br>本文全由Alin J在百度搜索了很多教程中总结出来的，如有雷同觉得是抄袭的可联系我，邮箱：dgangmagag@163.com。<br>node.js安装好了，git，hexo，npm也安装好了，下一步就是把源码上传到github上，并实现输入域名即可浏览自己的博客。</p>
+<h2 id="以下步骤缺一不可"><a href="#以下步骤缺一不可" class="headerlink" title="以下步骤缺一不可"></a>以下步骤缺一不可</h2><h2 id="第一步：创建github账号和创建仓库"><a href="#第一步：创建github账号和创建仓库" class="headerlink" title="第一步：创建github账号和创建仓库"></a>第一步：创建github账号和创建仓库</h2><h3 id="1，百度github，进入官网注册"><a href="#1，百度github，进入官网注册" class="headerlink" title="1，百度github，进入官网注册"></a>1，百度github，进入官网注册</h3><p>简单的操作</p>
+<h3 id="1-2，创建仓库"><a href="#1-2，创建仓库" class="headerlink" title="1.2，创建仓库"></a>1.2，创建仓库</h3><p>点击Repositories，点击new，跳转到Create a new repository页面。<br>在Repository name输入你的仓库名，格式是XXX.github.io,由于第一次操作，我建议<br>XXX输入你的用户名。</p>
+<h2 id="第二步：生成ssh-key-为github配置ssh-key"><a href="#第二步：生成ssh-key-为github配置ssh-key" class="headerlink" title="第二步：生成ssh key,为github配置ssh key"></a>第二步：生成ssh key,为github配置ssh key</h2><h3 id="2-1，生成key"><a href="#2-1，生成key" class="headerlink" title="2.1，生成key"></a>2.1，生成key</h3><p>配置git用户名和邮箱<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config user.name <span class="string">"用户名"</span></div><div class="line">git config user.email <span class="string">"邮箱"</span></div></pre></td></tr></table></figure></p>
+<p>顾名思义用户名就是你的github用户名，邮箱就是你的github邮箱</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C <span class="string">"youname@example.com"</span></div></pre></td></tr></table></figure>
+<p>youname@example.com这里写自己的gihub邮箱名，生成后输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> ~/.ssh/</div><div class="line">ls</div></pre></td></tr></table></figure></p>
+<p>可以看到<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">id_rsa	id_rsa.pub  known_hosts</div></pre></td></tr></table></figure></p>
+<p>三个文件，我们输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim id_rsa.pub</div></pre></td></tr></table></figure></p>
+<p>查看，把里面的东西全部复制，先粘贴到文档上,复制粘贴好按esc，输入:wq退出vim</p>
+<h3 id="2-2，为github配置SSH-key"><a href="#2-2，为github配置SSH-key" class="headerlink" title="2.2，为github配置SSH key"></a>2.2，为github配置SSH key</h3><p>登录到你的github，点击右上头像那里，在下拉菜单找到setting，在左边侧边栏找到SSH and GPG keys,点击绿色按钮new SSH key，title随便输入一个名称，key粘贴刚刚复制出来的ssh key。OK下一步。</p>
+<h2 id="第三步，配置-congig-yml"><a href="#第三步，配置-congig-yml" class="headerlink" title="第三步，配置_congig.yml"></a>第三步，配置_congig.yml</h2><p>这个文件在hexo安装的根目录下，拉到最下面，修改成（其中XXX就是你的用户名）<br>deploy:<br>  type: git<br>  repo:<br>    github: <a href="https://github.com/XXX/XXX.github.io.git" target="_blank" rel="external">https://github.com/XXX/XXX.github.io.git</a><br>    branch: master</p>
+<h2 id="第四步，建立本地仓库"><a href="#第四步，建立本地仓库" class="headerlink" title="第四步，建立本地仓库"></a>第四步，建立本地仓库</h2><p>1，在做本地仓库的文件夹内(如本人安装hexo创建了一个叫blog的文件夹，我输入cd blog然后在这个文件夹内执行的git init)，执行命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure></p>
+<p>2，完成后输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ls -a</div></pre></td></tr></table></figure></p>
+<p>可以看到多了一个.git的文件（.git里面的任何东西不要动）<br>3，然后指定文件加到本地仓库<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add .</div></pre></td></tr></table></figure></p>
+<p>这条命令时讲本地仓库的所有东西都添加到本地仓库，你可以指定某一文件，如你有一个名叫test的文件，输入git add test就提交test这个文件。<br>4，然后输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m <span class="string">"XXX"</span></div></pre></td></tr></table></figure></p>
+<p>XXX是提交说明，随便输入，例如：this is a test.</p>
+<p>5,建立链接<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add origin git@github.com:XXX/XXX.github.io.git</div></pre></td></tr></table></figure></p>
+<p>6,确认提交<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push -u origin master</div></pre></td></tr></table></figure></p>
+<p>提交速度看带宽，我的上传速度基本在1K到5K。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">对象计数中: 310, 完成.</div><div class="line">Delta compression using up to 4 threads.</div><div class="line">压缩对象中: 100% (297/297), 完成.</div><div class="line">写入对象中: 100% (310/310), 4.41 MiB | 1024 bytes/s, 完成.</div><div class="line">Total 310 (delta 10), reused 0 (delta 0)</div></pre></td></tr></table></figure></p>
+<p>然后光标一直不动了，吃完夜宵，大概半个小时，就显示<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">To git@github.com:diao7ni/diao7ni.github.io.git</div><div class="line"> * [new branch]      master -&gt; master</div><div class="line">分支 master 设置为跟踪来自 origin 的远程分支 master。</div></pre></td></tr></table></figure></p>
+<p>提交完成</p>
+<p>7,最后一步：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure>
+<p>在执行hexo d时可能会报错，在文章下面有解决方法<br>在浏览器输入XXX.github.io即可浏览到刚刚上传的博客啦</p>
+<h2 id="过程中可能出现的报错"><a href="#过程中可能出现的报错" class="headerlink" title="过程中可能出现的报错"></a>过程中可能出现的报错</h2><h3 id="问题1：输入hexo-d之后可能会出现这种问题，不知道你们会不会，反正我就是"><a href="#问题1：输入hexo-d之后可能会出现这种问题，不知道你们会不会，反正我就是" class="headerlink" title="问题1：输入hexo d之后可能会出现这种问题，不知道你们会不会，反正我就是"></a>问题1：输入hexo d之后可能会出现这种问题，不知道你们会不会，反正我就是</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">fatal: <span class="string">'master'</span> does not appear to be a git repository</div><div class="line">fatal: Could not <span class="built_in">read</span> from remote repository.</div><div class="line"></div><div class="line">Please make sure you have the correct access rights</div><div class="line">and the repository exists.</div><div class="line">FATAL Something<span class="string">'s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html</span></div><div class="line">Error: fatal: 'master<span class="string">' does not appear to be a git repository</span></div><div class="line">fatal: Could not read from remote repository.</div><div class="line"></div><div class="line">Please make sure you have the correct access rights</div><div class="line">and the repository exists.</div><div class="line"></div><div class="line">    at ChildProcess.&lt;anonymous&gt; (/home/lin/blog/node_modules/hexo-util/lib/spawn.js:37:17)</div><div class="line">    at emitTwo (events.js:106:13)</div><div class="line">    at ChildProcess.emit (events.js:191:7)</div><div class="line">    at maybeClose (internal/child_process.js:891:16)</div><div class="line">    at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)</div></pre></td></tr></table></figure>
+<p>因为被百度某些坑人博客欺骗，我在输入域名的时候没有输对格式，显示404错误，并且终端报出这条错误，以为是这条报错导致的404。为了解决这个问题我找了一个晚上也没有解决，在一个朋友无意中发了一个域名出来我才发现原来我一直在浏览器打错域名，正确域名格式时XXX.github.io，在打对域名后发现可以浏览自己的博客了，即使终端时报出这条错误。也就是说，这条报错可以无视，因为对我暂时没有影响。。。报错具体原因不详。</p>
+<h3 id="问题2，ssh-key-没有配好"><a href="#问题2，ssh-key-没有配好" class="headerlink" title="问题2，ssh key 没有配好"></a>问题2，ssh key 没有配好</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Warning: Permanently added the RSA host key <span class="keyword">for</span> IP address <span class="string">'192.30.253.113'</span> to the list of known hosts. Permission denied (publickey). fatal: Could not <span class="built_in">read</span> from remote repository. Please make sure y</div></pre></td></tr></table></figure>
+<p>解决办法：重新配一个呗</p>
+<h3 id="问题3，git-fatal-远程-origin-已经存在。"><a href="#问题3，git-fatal-远程-origin-已经存在。" class="headerlink" title="问题3，git fatal: 远程 origin 已经存在。"></a>问题3，git fatal: 远程 origin 已经存在。</h3><p>这种情况一般是在百度教程复制粘贴别人的命令的时候没有修改然后手快按了enter才会发生。解决方法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git remote rm origin</div><div class="line"></div><div class="line">git remote add origin git@github.com:XXX/XXX.github.io.git</div></pre></td></tr></table></figure></p>
+<h3 id="问题4，ERROR-Deployer-not-found-git"><a href="#问题4，ERROR-Deployer-not-found-git" class="headerlink" title="问题4，ERROR Deployer not found: git"></a>问题4，ERROR Deployer not found: git</h3><p>解决办法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<p>有些百度出来的教程是教你输入npm install hexo-deployer-git -save（只想对这些抄都抄少一个行杠的人表示呵呵，执行之后报错，加多一个-后执行成功）</p>
+<h3 id="问题5，执行hexo-d之后要输入Username-for-‘https-github-com‘"><a href="#问题5，执行hexo-d之后要输入Username-for-‘https-github-com‘" class="headerlink" title="问题5，执行hexo d之后要输入Username for ‘https://github.com‘:"></a>问题5，执行hexo d之后要输入Username for ‘<a href="https://github.com" target="_blank" rel="external">https://github.com</a>‘:</h3><p>解决办法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Username <span class="keyword">for</span> <span class="string">'https://github.com'</span>: </div><div class="line">Password <span class="keyword">for</span> <span class="string">'https://diao7ni@github.com'</span>:</div></pre></td></tr></table></figure></p>
+<p>输入你的git用户名和登录密码就好了</p>
+
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2016/06/05/hexo-install&use/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
