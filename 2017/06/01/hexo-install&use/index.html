@@ -12,7 +12,7 @@
     
     <title>
         
-            文章: 2017 | 
+            hexo的安装和使用 | 
         
         Alin J&#39;s Blog
     </title>
@@ -67,15 +67,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="文章: 2017 | Alin J&#39;s Blog">
+    <meta property="og:title" content="hexo的安装和使用 | Alin J&#39;s Blog">
     <meta property="og:image" content="/img/flower.jpeg" />
     <meta property="og:description" content="">
     
 
     
+        <meta property="article:published_time" content="6月 01, 2017" />
+        <meta property="article:modified_time" content="6月 12, 2017" />
+    
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="文章: 2017 | Alin J&#39;s Blog">
+    <meta name="twitter:title" content="hexo的安装和使用 | Alin J&#39;s Blog">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="/img/flower.jpeg">
     <meta name="twitter:card" content="summary_large_image" />
@@ -83,13 +86,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/archives/2017/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2017/06/01/hexo-install&use/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Alin J&#39;s Blog",
+        "logo": "/img/flower.jpeg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Alin J",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/flower.jpeg"
+        },
+        "description": "你好，这里是Alin J的博客"
+    },
+    "headline": "hexo的安装和使用",
+    "url": "http://yoursite.com/2017/06/01/hexo-install&use/index.html",
+    "datePublished": "6月 01, 2017",
+    "dateModified": "6月 12, 2017",
+    "description": "",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://yoursite.com"
+    }
+}
+</script>
 
 
     
@@ -277,155 +310,248 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第一步：安装node-js和Git"><span class="post-toc-number">1.</span> <span class="post-toc-text">第一步：安装node.js和Git</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1，安装node-js"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1，安装node.js</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-2，安装Git"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">1.2，安装Git</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#第二步：hexo的安装和使用"><span class="post-toc-number">2.</span> <span class="post-toc-text">第二步：hexo的安装和使用</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-1，hexo安装"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">2.1，hexo安装</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-2，快速创建一个博客"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">2.2，快速创建一个博客</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-3，打开blog文件夹"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">2.3，打开blog文件夹</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-4，安装npm"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">2.4，安装npm</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-5，生成静态页面"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">2.5，生成静态页面</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-6，启动hexo服务"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">2.6，启动hexo服务</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#以上就是hexo的安装和初步使用了，关于想更换hexo主题，创建新文章，添加评论功能等，在日后的博文中会有教程。"><span class="post-toc-number">3.</span> <span class="post-toc-text">以上就是hexo的安装和初步使用了，关于想更换hexo主题，创建新文章，添加评论功能等，在日后的博文中会有教程。</span></a></li></ol>
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--3dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/06/01/hexo-install&amp;use/">hexo的安装和使用</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            操作系统：ubuntu16.04,操作时间2017.6.11。hexo是一款基于Node.js的静态博客框架，下面就详细讲解在ubuntu16.04...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/06/01/hexo-install&amp;use/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/touxiang.jpeg" width="44px" height="44px" alt="Alin J's avatar">
-            </div>
-            <div>
-                <strong>Alin J</strong>
-                <span>6月 01, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--3dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/06/01/hexo上传到github/">使用hexo做好博客后上传到github</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            操作系统：ubuntu16.04，hexo版本 “hexo”: {“version”: “3.3.7”},操作时间：2017.6.12。本文...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/06/01/hexo上传到github/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/touxiang.jpeg" width="44px" height="44px" alt="Alin J's avatar">
-            </div>
-            <div>
-                <strong>Alin J</strong>
-                <span>6月 01, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                hexo的安装和使用
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/touxiang.jpeg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Alin J</strong>
+        <span>6月 01, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=hexo的安装和使用&url=http://yoursite.com/2017/06/01/hexo-install&amp;use/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=hexo的安装和使用&url=http://yoursite.com/2017/06/01/hexo-install&amp;use/index.html&via=Alin J" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/06/01/hexo-install&amp;use/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Alin J&#39;s Blog&title=hexo的安装和使用&summary=null&pics=http://yoursite.com/img/flower.jpeg&url=http://yoursite.com/2017/06/01/hexo-install&use/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>操作系统：ubuntu16.04,操作时间2017.6.11。hexo是一款基于Node.js的静态博客框架，下面就详细讲解在ubuntu16.04下如何安装和使用hexo。</p>
+<h2 id="第一步：安装node-js和Git"><a href="#第一步：安装node-js和Git" class="headerlink" title="第一步：安装node.js和Git"></a>第一步：安装node.js和Git</h2><h3 id="1，安装node-js"><a href="#1，安装node-js" class="headerlink" title="1，安装node.js"></a>1，安装node.js</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo apt-get install -y nodejs</div></pre></td></tr></table></figure>
+<p>这是node.js比较推荐的安装方法，一步到位。如果通过apt-get install nodejs使用ubuntu官方库的node.js，安装后还要执行更新命令，因为ubuntu官方库的版本过旧，不太推荐。</p>
+<h3 id="1-2，安装Git"><a href="#1-2，安装Git" class="headerlink" title="1.2，安装Git"></a>1.2，安装Git</h3><p>可以先查看你的电脑是否安装了Git，终端输入git，如果显示</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">The program <span class="string">'git'</span> is currently not installed. You can install it by typing:</div></pre></td></tr></table></figure>
+<p>则说明没有安装Git，可以直接执行以下命令来安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install git</div></pre></td></tr></table></figure>
+<h2 id="第二步：hexo的安装和使用"><a href="#第二步：hexo的安装和使用" class="headerlink" title="第二步：hexo的安装和使用"></a>第二步：hexo的安装和使用</h2><h3 id="2-1，hexo安装"><a href="#2-1，hexo安装" class="headerlink" title="2.1，hexo安装"></a>2.1，hexo安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo npm install hexo-cli -g</div></pre></td></tr></table></figure>
+<h3 id="2-2，快速创建一个博客"><a href="#2-2，快速创建一个博客" class="headerlink" title="2.2，快速创建一个博客"></a>2.2，快速创建一个博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init blog</div></pre></td></tr></table></figure>
+<p>命令行中的blog为文件夹名（可自定义），执行该命令后会在/home/用户/下创建一个叫blog的文件夹。</p>
+<h3 id="2-3，打开blog文件夹"><a href="#2-3，打开blog文件夹" class="headerlink" title="2.3，打开blog文件夹"></a>2.3，打开blog文件夹</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> blog</div></pre></td></tr></table></figure>
+<h3 id="2-4，安装npm"><a href="#2-4，安装npm" class="headerlink" title="2.4，安装npm"></a>2.4，安装npm</h3><p>该命令是本地安装，如果想全局安装则执行$ sudo npm install -g</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo npm install</div></pre></td></tr></table></figure>
+<h3 id="2-5，生成静态页面"><a href="#2-5，生成静态页面" class="headerlink" title="2.5，生成静态页面"></a>2.5，生成静态页面</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g</div></pre></td></tr></table></figure>
+<p>hexo generate也可以</p>
+<h3 id="2-6，启动hexo服务"><a href="#2-6，启动hexo服务" class="headerlink" title="2.6，启动hexo服务"></a>2.6，启动hexo服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>启动成功后直接在浏览器输入localhost:4000可看到hexo默认博客。</p>
+<h2 id="以上就是hexo的安装和初步使用了，关于想更换hexo主题，创建新文章，添加评论功能等，在日后的博文中会有教程。"><a href="#以上就是hexo的安装和初步使用了，关于想更换hexo主题，创建新文章，添加评论功能等，在日后的博文中会有教程。" class="headerlink" title="以上就是hexo的安装和初步使用了，关于想更换hexo主题，创建新文章，添加评论功能等，在日后的博文中会有教程。"></a>以上就是hexo的安装和初步使用了，关于想更换hexo主题，创建新文章，添加评论功能等，在日后的博文中会有教程。</h2>
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/06/01/hexo上传到github/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
