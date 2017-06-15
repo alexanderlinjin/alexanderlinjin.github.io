@@ -3,6 +3,56 @@
   
     
     <entry>
+      <title><![CDATA[github上传自己做的网页(图文教程)]]></title>
+      <url>/2017/06/04/github%E4%B8%8A%E4%BC%A0%E8%87%AA%E5%B7%B1%E5%81%9A%E7%9A%84%E7%BD%91%E9%A1%B5/</url>
+      <content type="html"><![CDATA[<h3 id="以下均为本人原创"><a href="#以下均为本人原创" class="headerlink" title="以下均为本人原创"></a>以下均为本人原创</h3><p>操作系统：Ubuntu16.04，操作时间：2017.06.04<br>在苦恼自己做的网页只能本地查看，但服务器又要钱，又想免费用别人的服务器？<br>我来教你自己写的网页想上传到github，并实现网上就能看到自己做的网页。不用犹豫，跟着下面的步骤走就可以了,手速快的一分钟搞定。</p>
+<h2 id="第一步：创建新的仓库"><a href="#第一步：创建新的仓库" class="headerlink" title="第一步：创建新的仓库"></a>第一步：创建新的仓库</h2><p>新建一个仓库,这里举例叫helloworld(截图打少一个l).创建时把这个选项Initialize this repository with a README给勾上<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/source/img/1.jep" alt="img" title="">
+                </div>
+                <div class="image-caption">img</div>
+            </figure></p>
+<h2 id="第二步：找到settings"><a href="#第二步：找到settings" class="headerlink" title="第二步：找到settings"></a>第二步：找到settings</h2><p>进入刚创建的仓库，进入settings,一直往下拉，拉到GitHub Pages<br>可以看到这样<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/source/img/2.jep" alt="img" title="">
+                </div>
+                <div class="image-caption">img</div>
+            </figure><br>点击master branch,然后点击save。</p>
+<p>然后点击choose a theme,随便选一个主题，点绿色按钮保存<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/source/img/3.jep" alt="img" title="">
+                </div>
+                <div class="image-caption">img</div>
+            </figure><br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/source/img/4.jep" alt="img" title="">
+                </div>
+                <div class="image-caption">img</div>
+            </figure><br>选完主题后，拉到最下面点击以下commit changes<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/source/img/5.jep" alt="img" title="">
+                </div>
+                <div class="image-caption">img</div>
+            </figure></p>
+<h2 id="github上的操作完成，下面终端操作"><a href="#github上的操作完成，下面终端操作" class="headerlink" title="github上的操作完成，下面终端操作"></a>github上的操作完成，下面终端操作</h2><h2 id="clone你的仓库"><a href="#clone你的仓库" class="headerlink" title="clone你的仓库"></a>clone你的仓库</h2><p>1.打开你的终端，输入git clone git@github.com:XXX/helloworld.git，把刚刚创的仓库克隆到本地，XXX就是你的用户名，helloworld就是你的仓库名。<br>2.然后/home/用户/下就多了一个helloworld的文件夹<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> helloworld</div></pre></td></tr></table></figure></p>
+<p>3.把你的网页复制进helloworld文件夹中，记住，不要父级目录，一般我们制作网页时会起一个例如叫test的文件夹，然后在里面创建子级文件夹img,css,js等文件，这里不要父级文件夹，即test，不然到时候输入域名打开不了你的网页<br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/source/img/6.jep" alt="img" title="">
+                </div>
+                <div class="image-caption">img</div>
+            </figure><br>4,提交你的网站<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git add .</div><div class="line">git commit -m <span class="string">"message"</span></div><div class="line">git push origin master</div></pre></td></tr></table></figure></p>
+<h3 id="最后在浏览器输入XXX-github-io-helloworld-成功"><a href="#最后在浏览器输入XXX-github-io-helloworld-成功" class="headerlink" title="最后在浏览器输入XXX.github.io/helloworld,成功"></a>最后在浏览器输入XXX.github.io/helloworld,成功</h3>]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[实用的10条代码之css]]></title>
       <url>/2017/06/03/css%E4%BB%A3%E7%A0%8110%E6%9D%A1/</url>
       <content type="html"><![CDATA[<p>　　网上找到的10条css代码</p>
