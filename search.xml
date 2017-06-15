@@ -9,44 +9,44 @@
 <h2 id="第一步：创建新的仓库"><a href="#第一步：创建新的仓库" class="headerlink" title="第一步：创建新的仓库"></a>第一步：创建新的仓库</h2><p>新建一个仓库,这里举例叫helloworld(截图打少一个l).创建时把这个选项Initialize this repository with a README给勾上<br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/source/img/1.jep" alt="img" title="">
+                    <img src="http://orkmvqztr.bkt.clouddn.com/1.jpg" alt="img" title="">
                 </div>
                 <div class="image-caption">img</div>
             </figure></p>
 <h2 id="第二步：找到settings"><a href="#第二步：找到settings" class="headerlink" title="第二步：找到settings"></a>第二步：找到settings</h2><p>进入刚创建的仓库，进入settings,一直往下拉，拉到GitHub Pages<br>可以看到这样<br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/source/img/2.jep" alt="img" title="">
+                    <img src="http://orkmvqztr.bkt.clouddn.com/2.jpg" alt="img" title="">
                 </div>
                 <div class="image-caption">img</div>
             </figure><br>点击master branch,然后点击save。</p>
 <p>然后点击choose a theme,随便选一个主题，点绿色按钮保存<br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/source/img/3.jep" alt="img" title="">
+                    <img src="http://orkmvqztr.bkt.clouddn.com/3.jpg" alt="img" title="">
                 </div>
                 <div class="image-caption">img</div>
             </figure><br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/source/img/4.jep" alt="img" title="">
+                    <img src="http://orkmvqztr.bkt.clouddn.com/4.jpg" alt="img" title="">
                 </div>
                 <div class="image-caption">img</div>
             </figure><br>选完主题后，拉到最下面点击以下commit changes<br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/source/img/5.jep" alt="img" title="">
+                    <img src="http://orkmvqztr.bkt.clouddn.com/5.jpg" alt="img" title="">
                 </div>
                 <div class="image-caption">img</div>
             </figure></p>
 <h2 id="github上的操作完成，下面终端操作"><a href="#github上的操作完成，下面终端操作" class="headerlink" title="github上的操作完成，下面终端操作"></a>github上的操作完成，下面终端操作</h2><h2 id="clone你的仓库"><a href="#clone你的仓库" class="headerlink" title="clone你的仓库"></a>clone你的仓库</h2><p>1.打开你的终端，输入git clone git@github.com:XXX/helloworld.git，把刚刚创的仓库克隆到本地，XXX就是你的用户名，helloworld就是你的仓库名。<br>2.然后/home/用户/下就多了一个helloworld的文件夹<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> helloworld</div></pre></td></tr></table></figure></p>
-<p>3.把你的网页复制进helloworld文件夹中，记住，不要父级目录，一般我们制作网页时会起一个例如叫test的文件夹，然后在里面创建子级文件夹img,css,js等文件，这里不要父级文件夹，即test，不然到时候输入域名打开不了你的网页<br><figure class="image-bubble">
+<p>3.把你的网页复制进helloworld文件夹中，特别注意，不要父级目录，一般我们制作网页时会起一个例如叫test的文件夹，然后在里面创建子级文件夹img,css,js等文件，这里不要父文件夹（即test），只需要子文件夹和html文件，不然到时候输入域名打开不了你的网页，在仓库中要有一个index.html文件才能浏览你自己的网页<br><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/source/img/6.jep" alt="img" title="">
+                    <img src="http://orkmvqztr.bkt.clouddn.com/6.png" alt="img" title="">
                 </div>
                 <div class="image-caption">img</div>
-            </figure><br>4,提交你的网站<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git add .</div><div class="line">git commit -m <span class="string">"message"</span></div><div class="line">git push origin master</div></pre></td></tr></table></figure></p>
+            </figure><br>把img,js…之类的文件复制到helloworld中，不要把test整个复制。<br>4,提交你的网站<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git add .</div><div class="line">git commit -m <span class="string">"message"</span></div><div class="line">git push origin master</div></pre></td></tr></table></figure></p>
 <h3 id="最后在浏览器输入XXX-github-io-helloworld-成功"><a href="#最后在浏览器输入XXX-github-io-helloworld-成功" class="headerlink" title="最后在浏览器输入XXX.github.io/helloworld,成功"></a>最后在浏览器输入XXX.github.io/helloworld,成功</h3>]]></content>
       
         
